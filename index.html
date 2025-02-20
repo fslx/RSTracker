@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSRS Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+
+    <img src="images/osrslogo.png">
+
+    <section class="container">
+        <h1>OSRS Maxing calculator</h1>
+        <label for="username">Enter OSRS username:</label>
+        <input type="text" id="username" placeholder="Wise Old Man Username">
+        <button id="fetch-data">Fetch data</button>
+
+        <label for="xp-rate">Select XP Rate:</label>
+        <select id="xp-rate">
+            <option value="50000">Casual (50k xp/hr)</option>
+            <option value="100000">Efficient (100k xp/hr)</option>
+            <option value="200000">Tick-perfect (200k xp/hr)</option>
+        </select>
+
+        <label for="custom-xp-rate">Custom XP Rate:</label>
+        <input type="number" id="custom-xp-rate" placeholder="Enter xp/hr" min="1">
+
+        <p id="result">Estimated time to max: --</p>
+    </section>
+</body>
+
+</html>
